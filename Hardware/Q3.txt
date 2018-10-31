@@ -1,0 +1,3 @@
+31
+
+For each record, the space cost is 4+20+4+8=36 bytes; For 50000 records, we need 50000 * 36 = 1800000 bytes. Total number of pages will be 1800000 / 8000 = 225. The cost of binary search is then log2(225)=8. The worst case when reading the data to buffer would cost (225/10)+1=24 pages, however one of the page has been read when we implement the binary search. Hence the total cost will be 8+24-1=31.

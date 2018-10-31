@@ -1,0 +1,7 @@
+SELECT bid FROM Boats B
+EXCEPT
+SELECT bid FROM (
+	SELECT sid, bid FROM Boats B, Sailors S
+	EXCEPT
+	SELECT sid, bid FROM Reserves R
+) AS BoatNotReservedByAll

@@ -1,0 +1,3 @@
+33
+
+Total cost = 2N(⎡logB-1 ⎡N/B⎤⎤+ 1),pages N=(500000x(4+4+8))/8000=1000, we already known the total cost equals to 4000/1=4000, so the B=32.126...,at least 33 buffer pool pages

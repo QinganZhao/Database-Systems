@@ -1,0 +1,2 @@
+62100
+For relation R, we have 10000 tuples and 80 * 10000 / 8000 = 100 pages; For relation S, we have 50000 tuples. Hence if we are using Index Nested Loops join with R as outer relation, the each tuple in R corresponds to 50000 / 10000 = 5 tuples. Hence the total cost will be 100 + 10000 * (1.2 + 5) = 62100. 

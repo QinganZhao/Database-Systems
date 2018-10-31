@@ -1,0 +1,3 @@
+5006
+
+For this problem, the height of b+ tree should also be 2 since 1 cannot be implemented and 3 is too much in terms of the cost. We have 50000/10=5000 records with rating 10, and each corresponds to a pointer (4 bytes) and a rid (4 bytes), indicating the total cost for each index is 8 bytes. We have 5000 such records so there will be 5000*8/8000=5 nodes in the layer above the data. Search those 5000 records given index will cost 5000 pages at most. Hence the total cost is 5000 + 5 + 1 = 5006

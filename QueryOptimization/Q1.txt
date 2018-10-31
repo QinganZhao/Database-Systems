@@ -1,0 +1,2 @@
+6350
+R has 80 * 10000 / 8000 = 100 pages, and S has 100*50000/8000 = 625 pages. And using the smaller relation R as outer, the cost of scanning R is 100 I/Os, and a total of 100 / (12 - 2) = 10 blocks are needed. So when scanning the inner relation, a total of 10 * 625 = 6250 I/Os are needed. As a result the join needs 100 + 6250 = 6350 I/Os.

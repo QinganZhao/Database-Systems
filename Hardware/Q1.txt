@@ -1,0 +1,13 @@
+SELECT sname FROM Sailors S
+JOIN (
+	SELECT * FROM (
+		SELECT sid FROM Boats B
+		JOIN Reserves R ON B.bid = R.bid
+		WHERE color = 'red'
+	) AS Red
+ 	INTERSECT ( 
+		SELECT sid FROM Boats B
+		JOIN Reserves R ON B.bid = R.bid
+		WHERE color = 'blue'
+	)
+) AS RedBlue ON S.sid = RedBlue.sid

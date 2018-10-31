@@ -1,0 +1,3 @@
+25
+
+Since the tree is clustered, data with the same rating can be the children of the same node. The height of B+ tree is 2. The number of pages corresponding to data with the rating 10 is 5000*36/8000 = 23. Hence the total cost is 23 + 1 + 1 = 25
