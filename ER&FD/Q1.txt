@@ -1,0 +1,41 @@
+CREATE TABLE Time_Slot (
+  date DATE,
+  start TIME,
+  end TIME,
+  PRIMARY KEY (date, start, end)
+);
+
+CREATE TABLE Room (
+  rid INTEGER,
+  PRIMARY KEY rid
+);
+
+CREATE TABLE Exam (
+  eid INTEGER,
+  average INTEGER,
+  PRIMARY KEY eid,
+  FOREIGN KEY eid REFERENCES Event
+);
+
+CREATE TABLE Lecture (
+  eid INTEGER,
+  PRIMARY KEY eid,
+  FOREIGN KEY eid REFERENCES Event
+);
+
+CREATE TABLE Grade (
+  cid INTEGER,
+  eid INTEGER,
+  letter CHAR(2),
+  PRIMARY KEY (sid, eid),
+  FOREIGN KEY sid REFERENCES Student,
+  FOREIGN KEY eid REFERENCES Exam
+);
+
+CREATE TABLE Enrolled_in (
+  cid INTEGER,
+  sid INTEGER,
+  PRIMARY KEY (cid, sid),
+  FOREIGN KEY sid REFERENCES Student,
+  FOREIGN KEY cid REFERENCES Course
+);

@@ -1,0 +1,2 @@
+{A, B}
+Given A -> B, B -> A, A -> C, we can get the closure of each attribute: A+ = ABC, B+ = BAC, C+ = C. Hence we know that A and B are both keys and C is not. The reason that AB, AC, BC, ABC are not keys is that they contain at least one subset of keys so they are superkeys rather than keys.

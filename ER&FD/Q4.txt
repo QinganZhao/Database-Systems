@@ -1,0 +1,2 @@
+ABCE, CD
+Decomposition: for C->D, decompose into R – D and CD, which results in ABCE and CD. For AB-> E, as E is a key, AB is also a key. Therefore we do not to deal with it. For E->B, no decomposition needed also because E is a key. Validation: For FD C->D which is now in relation CD, C is a key for this relation, so it does not violate the BCNF; For FD AB->E which is now in relation ABCE, AB is a key and therefore it is in BCNF; For FD E->B which is also in relation ABCE, E is a key and therefore it is in BCNF.

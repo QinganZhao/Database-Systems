@@ -1,0 +1,6 @@
+Yes
+{A->B, B->D} |= A->D
+{ A->B, A->D} |= A->BD
+{ A->BD, BD->E} |= A->E
+{ A->E, A->D} |= A->ED
+{ A->ED, DE->C} |= A->C
