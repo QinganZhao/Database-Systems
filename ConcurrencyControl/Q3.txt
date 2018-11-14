@@ -1,0 +1,2 @@
+Yes
+The conflict graph is transaction 2 -> 1 and 2 -> 3, so there is no cycle in it. Hence, conflict serializable

@@ -1,0 +1,2 @@
+No
+T1 writes to C before T3 commits in which there is a write to the same object, making the schedule non-strict. (T3 writes to C first, but T1 writes to it later without T3 being committed or aborted)

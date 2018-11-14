@@ -1,0 +1,2 @@
+Yes
+It has the same final state as a serial schedule S' = R1(A)W2(A)W2(B)R2(C)W3(C).

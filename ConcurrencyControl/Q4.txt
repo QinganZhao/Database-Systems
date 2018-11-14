@@ -1,0 +1,2 @@
+No
+Transaction 1 commits before the commit of transaction 3 whose write W3(B) was read by T1 R1(B), so the schedule is not recoverable. (T3 should commit before T1 since T1 has read the change of B made by T3) 

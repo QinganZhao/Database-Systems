@@ -1,0 +1,2 @@
+No
+T2 reads uncommitted write of A made by T1, so it does not avoid cascading aborts.

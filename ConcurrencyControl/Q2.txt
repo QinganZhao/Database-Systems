@@ -1,0 +1,2 @@
+No
+It is neither view equivalent with serial schedule W1(A)W1(B)R2(A)R2(B)W2(C) since T2 reads value of A written by T1 while the original schedule doesn't, nor R2(A)R2(B)W2(C)W1(A)W1(B) since T2 reads initial value of A while the original schedule doesn't.
