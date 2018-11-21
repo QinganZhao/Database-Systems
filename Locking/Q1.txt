@@ -1,0 +1,2 @@
+S1(C)R1(C)S2(A)R2(A)X1(B)W1(B)U1(B)U1(C)C1U2(A)A2
+It is strict as all the unlock operations happen at the end before commit/abort. It is non-conservative as the lock X1(B) is not obtained at the beginning of T1 but after some read operations. There is no deadlock as T1 and T2 are not waiting for each other's lock to release.

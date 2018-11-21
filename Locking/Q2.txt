@@ -1,0 +1,2 @@
+S1(C)R1(C)S2(A)S2(C)R2(A)U2(A)R2(C)U2(C)A2X1(B)W1(B)U1(C)U1(B)C1
+It is non-strict 2PL as U2(A) happens before R2(C) so that not all locks are hold until abort. It avoids cascading aborts as all the reads, namely R1(C), R2(A), R2(C), never reads uncommitted writes.

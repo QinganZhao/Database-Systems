@@ -1,0 +1,2 @@
+No
+For example, in schedule S1(A)R1(A)X2(B)W2(B)S1(B)X2(A), N(T1) == N(T2) == 2. In this case, at operation S1(B), T1 request a lock hold by T2, so T1 would wait for T2. However, at operation X2(A), T2 request a lock hold by T1, so T2 would wait for T1. Thus there is a cycle of transactions waiting for locks to be released by each other, which is a deadlock.
