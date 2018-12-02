@@ -1,0 +1,2 @@
+20
+As for 10, since the corresponding page P3 has been written to disk, it does not need to be redone. Hence the first LSN considered in the REDO phase should be 20. 

@@ -1,0 +1,5 @@
+(5, 20)
+(4, 40)
+(1, 60)
+
+P5, P4, and P1 are modified in the buffer cache but have not been written to disk, so they are dirty pages, with the corresponding LSN 20, 40, and 60.

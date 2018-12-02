@@ -1,0 +1,6 @@
+LSN 10: No need redo, since P3 is not in dirty page table.
+LSN 20: Redo, since it does not satisfy any of the 3 conditions that avoid redo.
+LSN 30: No need redo, since P7 is not in dirty page table.
+LSN 40: Redo, since it does not satisfy any of the 3 conditions that avoid redo.
+LSN 50: No need redo, since P7 is not in dirty page table.
+LSN 60: Redo, since it does not satisfy any of the 3 conditions that avoid redo. 

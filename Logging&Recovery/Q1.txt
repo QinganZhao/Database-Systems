@@ -1,0 +1,6 @@
+LSN 30 and 50.
+For LSN 30, it makes flushedLSN updated to 10 (from 0).
+For LSN 50, it makes flushedLSN updated to 50 (from 10).
+
+P3 gets written to disk, so log must be flushed up to 10.
+P7 gets written to disk, so log must be flushed up to 50.  

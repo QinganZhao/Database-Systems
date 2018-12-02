@@ -1,0 +1,5 @@
+(T1, 50, running)
+(T2, 20, running)
+(T3, 60, running)
+
+All transactions are running since there is no transaction committed.
