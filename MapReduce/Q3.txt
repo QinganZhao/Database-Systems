@@ -1,0 +1,2 @@
+Map Reduce System
+Map reduce is designed for parallel computing with large dataset. It can be built on distributed systems which is exactly what we what in this problem. Also map reduce support iterative algorithms which is required in this problem. So we chose map reduce system.

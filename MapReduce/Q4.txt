@@ -1,0 +1,11 @@
+class mapper
+	method map (String d, String c):
+		for each word in c:
+			EmitIntermediate(Length(w), 1);
+
+class reducer
+	method reduce (int length, Iterator frequencies):
+		int result = 0;
+		for each f in frequencies:
+			result += ParseInt(f);
+		Emit(length, AsString(result));

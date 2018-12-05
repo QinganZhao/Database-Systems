@@ -1,0 +1,2 @@
+H-Store system
+This business problem requires the changes to be shown in real-time, which means we do not too consuming read and write. So choosing a system that can run everything in memory would satisfy such a requirement.

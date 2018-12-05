@@ -1,0 +1,2 @@
+C-Store system
+In this business problem, each table in the data set is actually a single customer view, and the user just need to run aggregation queries to count customers with specific properties. So in this case we do not have to directly store the tables but only the projections. Hence we chose C-Store.
